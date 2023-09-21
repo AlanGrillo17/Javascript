@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <button onclick="calculadora()">Abrir calculadora </button>
-    <script src="calculadora.js"> </script>
-</body>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: "poppins", monospace;
+        background-color: coral;
+        
+      }
+      section {
+        border: 5px solid white;
+        background-color: black;
+        opacity: 0.9;
+        color: white;
+        width: 50%;
+        margin: 80px auto 0 auto;
+        border-radius: 5px;
+        padding: 1rem 1rem;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        position: relative;
+      }
+      li {
+        padding: 0.5rem;
+        cursor: pointer;
+        border: 5px solid black;
+        font-size: 1.5rem;
+      }
+      li:hover {
+        border: 5px solid white;
+      }
+      li span {
+        color: gold;
+      }
+      #carrito li {
+        display: inline-block;
+      }
+      #carrito {
+        min-height: 140px;
+      }
+      h1 {
+        font-size: 2rem;
+        margin: 0;
+        padding: 1rem;
+        font-weight: 400;
+        line-height: 2rem;
+      }
+      h2 {
+        font-size: 2rem;
+        line-height: 1.5rem;
+        margin: 0;
+        padding: 1rem;
+        font-weight: 400;
+      }
+      #dinero {
+        color: gold;
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Esta es la mejor tienda para tu asado ¿Qué querés comprar?</h1>
+      <ul>
+        <li onclick="comprar(carbon)">Carbon <span>100G</span></li>
+        <li onclick="comprar(asado)">Asado <span>180G</span></li>
+        <li onclick="comprar(provoleta)">Provoleta <span>90G</span></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Mi Carrito</h2>
+      <ul id="carrito">
+        
+      </ul>
+      <h2 id="Dinero">
+        Dinero: <span>   </span>
+      </h2>
+    </section>
+    <script src="app.js"></script>
+  </body>
 </html>
