@@ -1,0 +1,54 @@
+
+@import 'fuente' ;
+@import 'variables';
+@import 'reset.scss';
+@import 'utilitarias.scss';
+@import 'main';
+@import 'header';
+@import'footer';
+
+
+.backraound{
+    background-color:aquamarine;
+    .bgrceleste{
+        background-color: coral;
+    }
+}
+
+
+.DERECHOS{
+    text-align: $espaciado-estandar;
+    background-color:$color-tercerio;
+    font-family: $tipografia-general;
+}
+
+
+.TITULO{
+    text-align:$espaciado-estandar;
+    background-color:$color-tercerio;
+    font-family:$tipografia-general;
+    font-weight: 700;
+    
+    }
+    
+    
+    
+
+.backraound{
+    background-color: $color-primario;
+    font-family: $tipografia-general;
+    .navbar-light .navbar-nav .nav-link.colorRojo{
+        color:$color-secundario;
+   }
+    .contenedorImgBanner {
+        Width: 100%
+        height 100%
+    
+        
+        Background-size  cover;
+        Background-position: start;
+        Display: flex;
+        }
+}
+
+
