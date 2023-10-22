@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "nombre": "enduro-ozone",
+      "precio":"1500",
+      "categoria":"equipos",
+      "imagen": "https://i.pinimg.com/564x/f2/d7/c5/f2d7c5e6396f01eaa4bd4b6c1e883c37.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "enduro-reach.jpg",
+      "precio":"1300",
+      "categoria":"equipo",
+      "imagen": "Enduro-ozone.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "enduro-V4-action",
+      "precio":"1400",
+      "categoria":"equipo",
+      "imagen":"enduro-V4-action-freeride.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "tabla Jackson",
+      "precio":"1000",
+      "categoria":"tabla",
+      "imagen": "tabla.jpg"
+    },
+     {
+      "id": 5,
+      "nombre": "duotone - dice",
+      "precio":"1500",
+      "categoria":"equipo",
+      "imagen": "https://i.pinimg.com/564x/f2/d7/c5/f2d7c5e6396f01eaa4bd4b6c1e883c37.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "duotone - space",
+      "precio":"1300",
+      "categoria":"equipos",
+      "imagen": "Enduro-ozone.jpg"
+    }, 
+    {
+      "id": 7,
+      "nombre": "cavok - tabla",
+      "precio":"2400",
+      "categoria":"tablas",
+      "imagen": "enduro-V4-action-freeride.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "cavok - panickattack",
+      "precio":"3000",
+      "categoria":"tablas",
+      "imagen": "tabla.jpg"
+    }
+  ]
