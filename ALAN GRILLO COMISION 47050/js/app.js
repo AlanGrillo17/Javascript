@@ -14,15 +14,12 @@ class BaseDeDatos {
    
     this.productos = [];
     
-    this.agregarRegistro(1, "enduro-ozone", 1500, "equipos", "https://i.pinimg.com/564x/f2/d7/c5/f2d7c5e6396f01eaa4bd4b6c1e883c37.jpg");
-    this.agregarRegistro(2, "enduro-reach.jpg", 1300, "equipos", "Enduro-ozone.jpg");
-    this.agregarRegistro(3, "enduro-V4-action", 1400, "equipos", "enduro-V4-action-freeride.jpg");
-    this.agregarRegistro(4, "tabla Jackson", 1000, "tablas", "tabla.jpg");
-    this.agregarRegistro(5, "duotone - dice", 1500, "equipos", "https://i.pinimg.com/564x/f2/d7/c5/f2d7c5e6396f01eaa4bd4b6c1e883c37.jpg");
-    this.agregarRegistro(6, "duotone - space", 1300, "equipos", "Enduro-ozone.jpg");
-    this.agregarRegistro(7, "cavok - tabla", 2400, "equipos", "enduro-V4-action-freeride.jpg");
-    this.agregarRegistro(8, "cavok - panickattack", 3000, "tablas", "tabla.jpg");
+   async cargarRegistros(){
+    const resultado = await fetch("json/productos.json");
+    this.productos = await resultado.jason();
+    cargarProductos(this.productos);
   }
+  
 
   agregarRegistro(id, nombre, precio, categoria, imagen) {
     const producto = new Producto(id, nombre, precio, categoria, imagen);
